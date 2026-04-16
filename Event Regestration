@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Event Registration</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" required>
+
+        <label>College / Organization</label>
+        <input type="text">
+
+        <label>Department</label>
+        <input type="text">
+
+        <label>Event Type</label>
+        <select>
+            <option>Workshop</option>
+            <option>Seminar</option>
+            <option>Hackathon</option>
+        </select>
+
+        <label>Ticket Type</label>
+        <select>
+            <option>Free</option>
+            <option>Paid</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
