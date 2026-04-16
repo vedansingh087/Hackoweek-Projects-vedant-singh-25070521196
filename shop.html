@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gilded Collection | Artisan Jewelry</title>
+    <style>
+        :root {
+            --gold: #c5a059;
+            --dark: #222;
+            --light-grey: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #fff;
+            color: var(--dark);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        h1 { font-weight: normal; letter-spacing: 2px; text-transform: uppercase; }
+
+        /* The Grid System */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .product-card {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .image-placeholder {
+            background-color: var(--light-grey);
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        /* Replace these with your actual <img> tags later */
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .category {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #888;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .product-name {
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
+        .price {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .buy-btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: var(--dark);
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .buy-btn:hover { background: var(--gold); }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Gilded Collection</h1>
+    <p>Handcrafted Elegance for Every Occasion</p>
+</header>
+
+<div class="product-grid">
+    <div class="product-card">
+        <div class="image-placeholder">
+            <img src="https://via.placeholder.com/400x400?text=Gold+Hoops" alt="Gold Hoops">
+        </div>
+        <span class="category">Earrings</span>
+        <h3 class="product-name">Celestial Gold Hoops</h3>
+        <p class="price">$85.00</p>
+        <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <div class="image-placeholder">
+            <img src="https://via.placeholder.com/400x400?text=Pearl+Necklace" alt="Pearl Necklace">
+        </div>
+        <span class="category">Necklaces</span>
+        <h3 class="product-name">Midnight Pearl Pendant</h3>
+        <p class="price">$120.00</p>
+        <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <div class="image-placeholder">
+            <img src="https://via.placeholder.com/400x400?text=Diamond+Ring" alt="Diamond Ring">
+        </div>
+        <span class="category">Rings</span>
+        <h3 class="product-name">Eternity Band (14k Gold)</h3>
+        <p class="price">$450.00</p>
+        <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <div class="image-placeholder">
+            <img src="https://via.placeholder.com/400x400?text=Stud+Earrings" alt="Stud Earrings">
+        </div>
+        <span class="category">Earrings</span>
+        <h3 class="product-name">Raw Emerald Studs</h3>
+        <p class="price">$95.00</p>
+        <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <div class="image-placeholder">
+            <img src="https://via.placeholder.com/400x400?text=Layered+Chain" alt="Layered Chain">
+        </div>
+        <span class="category">Necklaces</span>
+        <h3 class="product-name">Desert Sun Layered Chain</h3>
+        <p class="price">$110.00</p>
+        <button class="buy-btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <div class="image-placeholder">
+            <img src="https://via.placeholder.com/400x400?text=Silver+Band" alt="Silver Band">
+        </div>
+        <span class="category">Rings</span>
+        <h3 class="product-name">Hammered Silver Band</h3>
+        <p class="price">$65.00</p>
+        <button class="buy-btn">Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>
