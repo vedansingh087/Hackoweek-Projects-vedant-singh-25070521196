@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+            color: white;
+        }
+
+        .overlay {
+            background: rgba(0,0,0,0.6);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quiz-box {
+            background: rgba(255,255,255,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+    <div class="quiz-box">
+        <h2>Quick Quiz</h2>
+
+        <p>What is 2 + 2?</p>
+
+        <input type="radio" name="q1"> 3 <br>
+        <input type="radio" name="q1"> 4 <br>
+        <input type="radio" name="q1"> 5 <br>
+
+        <button onclick="checkAnswer()">Submit</button>
+
+        <p id="result"></p>
+    </div>
+</div>
+
+<script>
+function checkAnswer() {
+    let options = document.getElementsByName('q1');
+    if (options[1].checked) {
+        document.getElementById("result").innerHTML = "Correct!";
+    } else {
+        document.getElementById("result").innerHTML = "Wrong Answer!";
+    }
+}
+</script>
+
+</body>
+</html>
