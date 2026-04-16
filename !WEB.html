@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Dev Bootcamp</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#f4f6fb;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#4a6cf7;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px 8%;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+margin-bottom:20px;
+}
+
+.btn{
+background:#4a6cf7;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:6px;
+}
+
+.features{
+padding:60px 8%;
+text-align:center;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+margin-top:40px;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero-text h1{
+font-size:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">WebDev Bootcamp</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Features</a>
+<a href="#">Enroll</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+<h1>Become a Web Developer</h1>
+<p>Learn HTML, CSS, JavaScript and build real-world projects in this complete Web Development Bootcamp.</p>
+<a class="btn" href="#">Join Now</a>
+</div>
+
+<img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" width="350">
+
+</section>
+
+<section class="features">
+
+<h2>What You'll Learn</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>HTML & CSS</h3>
+<p>Build beautiful websites from scratch.</p>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Create dynamic and interactive web apps.</p>
+</div>
+
+<div class="card">
+<h3>Responsive Design</h3>
+<p>Make websites work on mobile and desktop.</p>
+</div>
+
+<div class="card">
+<h3>Projects</h3>
+<p>Build portfolio-ready real projects.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 WebDev Bootcamp
+</footer>
+
+</body>
+</html>
